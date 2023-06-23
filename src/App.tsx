@@ -13,50 +13,52 @@ export const App = () => {
   };
 
   return (
-    <Box
-      component="div"
-      sx={{
-        position: "absolute",
-        width: "100%",
-        height: "100%",
-        backgroundImage: `url(${building})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        cursor: "pointer",
-      }}
-      onClick={handleOnClick}
-    >
-      <div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            margin: "1rem",
-          }}
-        >
-          <div style={{ alignSelf: "center" }}>
-            <img width={50} src={logoIcon} alt="logoIcon.png" />
-          </div>
-          <IconButton aria-label="delete">
-            <NavLink to={"/map"}>
-              <img width={50} src={mapIcon} alt="mapIcon.svg" />
-            </NavLink>
-          </IconButton>
-        </div>
+    <div>
+      <Box
+        component="div"
+        sx={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          backgroundImage: `url(${building})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          cursor: "pointer",
+        }}
+        onClick={handleOnClick}
+      >
         <div>
-          <Typography
-            style={{ fontWeight: "bold" }}
-            align="center"
-            fontSize={"3rem"}
-            mt={2}
-            mb={2}
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              margin: "1rem",
+            }}
           >
-            Исторические здания города Красноярска
-          </Typography>
+            <div style={{ alignSelf: "center" }}>
+              <img width={50} src={logoIcon} alt="logoIcon.png" />
+            </div>
+            <IconButton aria-label="delete">
+              <NavLink to={"/map"}>
+                <img width={50} src={mapIcon} alt="mapIcon.svg" />
+              </NavLink>
+            </IconButton>
+          </div>
+          <div>
+            <Typography
+              style={{ fontWeight: "bold" }}
+              align="center"
+              fontSize={"3rem"}
+              mt={2}
+              mb={2}
+            >
+              Исторические здания города Красноярска
+            </Typography>
+          </div>
         </div>
-      </div>
-    </Box>
+      </Box>
+    </div>
   );
 };
 
