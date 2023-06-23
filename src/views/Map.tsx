@@ -13,7 +13,7 @@ export const Map = () => {
     <>
       <div style={{ margin: "1rem", position: "absolute" }}>
         <IconButton aria-label="delete">
-          <NavLink to={"/"}>
+          <NavLink to={"/test-gh-pages/"}>
             <img width={50} src={leftArrowIcon} alt="leftArrowIcon.svg" />
           </NavLink>
         </IconButton>

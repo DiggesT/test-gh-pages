@@ -10,7 +10,18 @@ import building from "./images/general/building.png";
 function App() {
   return (
     <div className="App">
-      <div>
+      <div
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          backgroundImage: `url(${building})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          //cursor: "pointer",
+        }}
+      >
         <div
           style={{
             display: "flex",
