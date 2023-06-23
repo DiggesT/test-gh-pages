@@ -1,13 +1,17 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { IconButton, Typography } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import mapIcon from "./images/icons/mapIcon.svg";
 import logoIcon from "./images/icons/logoIcon.png";
 import building from "./images/general/building.png";
 
 function App() {
+  const navigate = useNavigate();
+
+  const handleOnClick = () => {
+    navigate("/test-gh-pages/map");
+  };
+
   return (
     <div className="App">
       <div
@@ -19,8 +23,9 @@ function App() {
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          //cursor: "pointer",
+          cursor: "pointer",
         }}
+        onClick={handleOnClick}
       >
         <div
           style={{
