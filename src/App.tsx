@@ -5,15 +5,15 @@ import logoIcon from "./images/icons/logoIcon.png";
 import building from "./images/general/building.png";
 import { Box, IconButton } from "@mui/material";
 
-export const App = () => {
-  const navigate = useNavigate();
+function App() {
+  // const navigate = useNavigate();
 
-  const handleOnClick = () => {
-    navigate("/map");
-  };
+  // const handleOnClick = () => {
+  //   navigate("/map");
+  // };
 
   return (
-    <div>
+    <div className="App">
       <Box
         component="div"
         sx={{
@@ -26,7 +26,7 @@ export const App = () => {
           backgroundRepeat: "no-repeat",
           cursor: "pointer",
         }}
-        onClick={handleOnClick}
+        //onClick={handleOnClick}
       >
         <div>
           <div
@@ -60,6 +60,6 @@ export const App = () => {
       </Box>
     </div>
   );
-};
+}
 
 export default App;
