@@ -22,7 +22,7 @@ function App() {
             <img width={50} src={logoIcon} alt="logoIcon.png" />
           </div>
           <IconButton aria-label="delete">
-            <NavLink to={"/map"}>
+            <NavLink to={"/test-gh-pages/map"}>
               <img width={50} src={mapIcon} alt="mapIcon.svg" />
             </NavLink>
           </IconButton>
