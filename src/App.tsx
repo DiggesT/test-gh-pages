@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <Box
+      {/* <Box
         component="div"
         sx={{
           position: "absolute",
@@ -27,37 +27,37 @@ function App() {
           cursor: "pointer",
         }}
         //onClick={handleOnClick}
-      >
-        <div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              margin: "1rem",
-            }}
-          >
-            <div style={{ alignSelf: "center" }}>
-              <img width={50} src={logoIcon} alt="logoIcon.png" />
-            </div>
-            <IconButton aria-label="delete">
-              <NavLink to={"/map"}>
-                <img width={50} src={mapIcon} alt="mapIcon.svg" />
-              </NavLink>
-            </IconButton>
+      > */}
+      <div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            margin: "1rem",
+          }}
+        >
+          <div style={{ alignSelf: "center" }}>
+            <img width={50} src={logoIcon} alt="logoIcon.png" />
           </div>
-          <div>
-            <Typography
-              style={{ fontWeight: "bold" }}
-              align="center"
-              fontSize={"3rem"}
-              mt={2}
-              mb={2}
-            >
-              Исторические здания города Красноярска
-            </Typography>
-          </div>
+          <IconButton aria-label="delete">
+            <NavLink to={"/map"}>
+              <img width={50} src={mapIcon} alt="mapIcon.svg" />
+            </NavLink>
+          </IconButton>
         </div>
-      </Box>
+        <div>
+          <Typography
+            style={{ fontWeight: "bold" }}
+            align="center"
+            fontSize={"3rem"}
+            mt={2}
+            mb={2}
+          >
+            Исторические здания города Красноярска
+          </Typography>
+        </div>
+      </div>
+      {/* </Box> */}
     </div>
   );
 }
